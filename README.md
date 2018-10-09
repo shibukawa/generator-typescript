@@ -1,20 +1,26 @@
-# generator-next-ts-materialui [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# @shibukawa/generator-typescript [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > Next.js + TypeScript + Material UI
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-next-ts-materialui using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io) and @shibukawa/generator-typescript using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
 npm install -g yo
-npm install -g generator-next-ts-materialui
+npm install -g @shibukawa/generator-typescript
 ```
 
 Then generate your new project:
 
 ```bash
-yo next-ts-materialui
+yo @shibukawa/typescript
 ```
+
+It contains three types of templates:
+
+* nextjs: Next.js + TypeScript + Material-UI
+* node-lib: Node.js library + TypeScript (generate Common.JS javascript)
+* universal-lib: Library in TypeScript (generate Common.JS and ES6 modules javascript)
 
 ## Getting To Know Yeoman
 
@@ -28,9 +34,9 @@ yo next-ts-materialui
 Apache-2.0 © [Yoshiki Shibukawa](https://github.com/shibukawa)
 
 
-[npm-image]: https://badge.fury.io/js/generator-next-ts-materialui.svg
-[npm-url]: https://npmjs.org/package/generator-next-ts-materialui
-[travis-image]: https://travis-ci.org/shibukawa/generator-next-ts-materialui.svg?branch=master
-[travis-url]: https://travis-ci.org/shibukawa/generator-next-ts-materialui
-[daviddm-image]: https://david-dm.org/shibukawa/generator-next-ts-materialui.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/shibukawa/generator-next-ts-materialui
+[npm-image]: https://badge.fury.io/js/@shibukawa/generator-typescript.svg
+[npm-url]: https://npmjs.org/package/@shibukawa/generator-typescript
+[travis-image]: https://travis-ci.org/shibukawa/generator-typescript.svg?branch=master
+[travis-url]: https://travis-ci.org/shibukawa/generator-ypescript
+[daviddm-image]: https://david-dm.org/@shibukawa/generator-typescript.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/@shibukawa/generator-typescript

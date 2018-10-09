@@ -1,0 +1,58 @@
+{
+  "name": "@shibukawa/generator-typescript",
+  "version": "0.0.0",
+  "description": "TypeScript templates",
+  "homepage": "https://github.com/shibukawa/generator-next-ts-materialui",
+  "author": {
+    "name": "Yoshiki Shibukawa",
+    "email": "yoshiki@shibu.jp",
+    "url": "https://github.com/shibukawa"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "yoeman",
+    "generator",
+    "next.js",
+    "typescript",
+    "material-ui",
+    "yeoman-generator"
+  ],
+  "devDependencies": {
+    "@types/inquirer": "0.0.43",
+    "@types/underscore.string": "0.0.32",
+    "@types/yeoman-generator": "^3.0.0",
+    "@types/yosay": "0.0.29",
+    "husky": "^0.14.3",
+    "jest": "^23.5.0",
+    "prettier": "^1.11.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-plugin-prettier": "^2.0.0",
+    "typescript": "^3.1.1",
+    "yeoman-assert": "^3.1.0",
+    "yeoman-test": "^1.7.0"
+  },
+  "engines": {
+    "npm": ">= 4.0.0"
+  },
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "git-user-info": "^1.0.1",
+    "login-user-profile": "^1.0.2",
+    "underscore.string": "^3.3.5",
+    "yeoman-generator": "^2.0.1",
+    "yosay": "^2.0.1"
+  },
+  "scripts": {
+    "build": "tsc --project .",
+    "pretest": "tslint --project .",
+    "test": "jest",
+    "lint": "tslint --project .",
+    "fix": "tslint --project . --fix"
+  },
+  "repository": "shibukawa/generator-typescript",
+  "license": "Apache-2.0"
+}

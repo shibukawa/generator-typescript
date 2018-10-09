@@ -1,0 +1,12 @@
+.vscode
+__tests__
+node_modules
+src
+.gitignore
+.npmignore
+.editorconfig
+jest.config.js
+tsconfig.json
+tslint.json
+.DS_Store
+generators/**/*.ts

@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Yoshiki Shibukawa",
+      "authorEmail": "yoshiki@shibu.jp",
+      "authorUrl": "https://github.com/shibukawa"
+    }
+  }
+}

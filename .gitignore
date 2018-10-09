@@ -1,0 +1,6 @@
+node_modules
+coverage
+generators/app/index.js
+.DS_Store
+Thumbds.db
+generators/**/*.js

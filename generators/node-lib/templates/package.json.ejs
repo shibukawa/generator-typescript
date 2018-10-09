@@ -1,0 +1,33 @@
+{
+  "name": <%- JSON.stringify(slugname) %>,
+  "version": "0.0.1",
+  "description": <%- JSON.stringify(description) %>,
+  "scripts": {
+    "build": "tsc --project .",
+    "lint": "tslint --project .",
+    "fix": "tslint --fix --project .",
+    "test": "jest",
+    "watch": "jest --watchAll"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [],
+  "author": {
+    "name": <%- JSON.stringify(authorName) %>,
+    "email": <%- JSON.stringify(authorEmail) %><% if (authorUrl) { %>,
+    "url": <%- JSON.stringify(authorUrl) %><% } %>
+  },
+  "license": <%- JSON.stringify(license) %>,
+  "repository": <%- JSON.stringify(repoUrl) %>,
+  "devDependencies": {
+    "@types/jest": "^23.3.3",
+    "@types/node": "^10.11.4",
+    "jest": "^23.6.0",
+    "prettier": "^1.14.3",
+    "ts-jest": "^23.10.3",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-plugin-prettier": "^2.0.0",
+    "typescript": "^3.1.1"
+  }
+}

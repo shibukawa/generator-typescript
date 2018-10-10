@@ -3,15 +3,14 @@
   "version": "0.0.1",
   "description": <%- JSON.stringify(description) %>,
   "scripts": {
-    "build": "tsc --project . --outDir dist-cjs --module CommonJS --target esnext",
-    "postbuild": "tsc --project . --outDir dist-mjs --module ES6 --target es5",
+    "build": "tsc --project .",
     "lint": "tslint --project .",
     "fix": "tslint --fix --project .",
     "test": "jest",
     "watch": "jest --watchAll"
   },
-  "main": "dist-cjs/index.js",
-  "browser": "dist-mjs/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "keywords": [],
   "author": {
     "name": <%- JSON.stringify(authorName) %>,

@@ -1,6 +1,5 @@
 node_modules
 coverage
-generators/app/index.js
+generators/*/index.js
 .DS_Store
 Thumbds.db
-generators/**/*.js

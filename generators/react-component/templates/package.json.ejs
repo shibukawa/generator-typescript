@@ -1,12 +1,11 @@
 {
   "name": <%- JSON.stringify(slugname) %>,
+  "private": true,
   "version": "0.0.1",
   "description": <%- JSON.stringify(description) %>,
   "scripts": {
     "dev": "next",
-    "build": "next build",
-    "export": "next export",
-    "start": "next start",
+    "export": "next build && next export",
     "lint": "tslint --project .",
     "fix": "tslint --fix --project .",
     "test": "jest",
@@ -22,7 +21,6 @@
   "repository": <%- JSON.stringify(repoUrl) %>,
   "devDependencies": {
     "@types/jest": "^23.3.3",
-    "@types/next": "^7.0.3",
     "@types/node": "^10.11.4",
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.8",
@@ -35,18 +33,18 @@
     "tslint-config-prettier": "^1.15.0",
     "tslint-plugin-prettier": "^2.0.0",
     "tslint-react": "^3.6.0",
-    "typescript": "^3.1.1"
+    "typescript": "^3.1.1",
+    "react-sample-page-generator": "^0.1.0"
   },
   "dependencies": {
+    "@material-ui/core": "^3.2.0",
+    "@material-ui/icons": "^3.0.1",
     "next": "^7.0.1",
     "jss": "^9.8.7",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-jss": "^8.6.1",
-    "@zeit/next-sass": "^1.0.1",
-    "@zeit/next-source-maps": "0.0.3",
-    "node-sass": "^4.9.4",
-    "@material-ui/core": "^3.2.0",
-    "@material-ui/icons": "^3.0.1"
+    "react-markdown": "^4.0.1",
+    "react-syntax-highlighter": "^9.0.1"
   }
 }

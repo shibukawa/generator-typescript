@@ -38,7 +38,14 @@ export default class extends Generator {
             type: "list",
             name: "templateType",
             message: "What type of project do you want to create?",
-            choices: ["node-lib", "mjs-lib", "universal-lib", "nextjs"],
+            choices: [
+                "node-lib",
+                "node-cli",
+                "mjs-lib",
+                "universal-lib",
+                "nextjs",
+                "react-component"
+            ],
             default: "node-lib"
         };
 

@@ -3,3 +3,4 @@ coverage
 generators/*/index.js
 .DS_Store
 Thumbds.db
+*.tgz

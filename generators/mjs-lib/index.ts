@@ -4,7 +4,13 @@ import Generator from "yeoman-generator";
 export default class extends Generator {
     public writing() {
         this.sourceRoot(join(__dirname, "templates"));
-        const dotFiles = ["editorconfig", "gitignore", "vscode", "travis.yml"];
+        const dotFiles = [
+            "editorconfig",
+            "gitignore",
+            "vscode",
+            "travis.yml",
+            "npmignore"
+        ];
         for (const dotFile of dotFiles) {
             this.fs.copy(
                 `${this.sourceRoot()}/${dotFile}`,
@@ -21,16 +27,24 @@ export default class extends Generator {
             );
         }
 
-        const regularFiles = [
-            "jest.config.js",
-            "src",
-            "tsconfig.json",
-            "tslint.json"
+        const copyFiles = [
+            { src: "jest.config.js" },
+            { src: "src" },
+            { src: "tsconfig.json" },
+            { src: "tslint.json" },
+            { src: "editorconfig", dest: ".editorconfig" },
+            { src: "gitignore", dest: ".gitignore" },
+            { src: "vscode", dest: ".vscode" },
+            { src: "travis.yml", dest: ".travis.yml" },
+            { src: "npmignore", dest: ".npmignore" }
         ];
-        for (const regularFile of regularFiles) {
+        for (let { src, dest } of copyFiles) {
+            if (!dest) {
+                dest = src;
+            }
             this.fs.copy(
-                `${this.sourceRoot()}/${regularFile}`,
-                this.destinationPath(regularFile)
+                join(this.sourceRoot(), src),
+                this.destinationPath(dest)
             );
         }
     }

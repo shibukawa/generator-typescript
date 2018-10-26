@@ -1,6 +1,8 @@
 # build output
 dist
 .next
+pages/*.tsx
+out
 
 # dependencies
 node_modules

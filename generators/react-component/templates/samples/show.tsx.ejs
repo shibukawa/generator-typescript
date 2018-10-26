@@ -1,0 +1,18 @@
+/*@
+# Sample page of <%= titlename %>
+
+This is an auto generated sample page.
+*/
+
+import React, { Component} from "react";
+import { <%- titlename %> } from "../dist/<%- slugname %>";
+
+export default class <%s= titlename %>Page extends Component {
+    public render() {
+        return (
+            <div>
+                <<%- titlename %> />
+            </div>
+        );
+    }
+}

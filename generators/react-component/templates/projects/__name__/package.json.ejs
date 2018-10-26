@@ -1,0 +1,19 @@
+{
+    "name": <%- JSON.stringify(slugname) %>,
+    "version": "0.0.1",
+    "description": <%- JSON.stringify(description) %>,
+    "keywords": [],
+    "author": {
+      "name": <%- JSON.stringify(authorName) %>,
+      "email": <%- JSON.stringify(authorEmail) %><% if (authorUrl) { %>,
+      "url": <%- JSON.stringify(authorUrl) %><% } %>
+    },
+    "license": <%- JSON.stringify(license) %>,
+    "repository": <%- JSON.stringify(repoUrl) %>,
+    "peerDependencies": {
+      "jss": "^9.8.7",
+      "react": "^16.5.2",
+      "react-dom": "^16.5.2",
+      "react-jss": "^8.6.1"
+    }
+}

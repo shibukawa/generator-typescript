@@ -128,7 +128,7 @@ export default class extends Generator {
         const props = await this.prompt(prompts);
         props.slugname = _.slugify(props.name);
         props.camelname = _.camelize(props.name);
-        props.titlename = _.titleize(props.name).replace("-", "");
+        props.titlename = _.titleize(props.name).replace(/-/g, "");
 
         props.repoUrl =
             "https://github.com/" + props.githubUsername + "/" + props.slugname;

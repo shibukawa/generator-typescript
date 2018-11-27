@@ -44,7 +44,7 @@
     "cli-color": "^1.3.0",
     "git-user-info": "^1.0.1",
     "login-user-profile": "^1.0.2",
-    "react-sample-page-generator": "file:../react-sample-page-generator/react-sample-page-generator-0.1.1.tgz",
+    "react-sample-page-generator": "^0.1.4",
     "underscore.string": "^3.3.5",
     "yeoman-generator": "^2.0.1",
     "yosay": "^2.0.1"
